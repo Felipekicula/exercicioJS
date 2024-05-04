@@ -1,0 +1,23 @@
+<!-- Escreva um programa em JavaScript que exiba na tela o maior número
+entre dois números fornecidos pelo usuário.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <script>
+        function acharNum(num1, num2){
+            return num1 > num2 ? num1 : num2;
+        }
+
+        var num1 = parseFloat(prompt("Digite o primeiro número"));
+        var num2 = parseFloat(prompt("Digite o segundo número"));
+
+        document.write("O maior número é: " + acharNum(num1, num2));
+    </script>
+</body>
+</html>

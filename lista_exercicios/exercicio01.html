@@ -1,0 +1,29 @@
+<!-- Escreva um programa em JavaScript que exiba na tela o maior número
+entre dois números fornecidos pelo usuário -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 01</title>
+</head>
+<body>
+    <script>
+
+        var num1 = parseFloat(prompt("Digite seu primeiro numero"));
+        var num2 = parseFloat(prompt("Digite seu segundo número"));
+
+        if (num1 > num2){
+            document.write("Entre " + num1 + " e " + num2 + ", o número maior é o " + num1);
+        }
+        else if (num1 < num2){
+            document.write("Entre " + num1 + " e " + num2 + ", o número maior é o " + num2);
+        }
+        else {
+            document.write("Os números digitados são iguais")
+        }
+
+    </script>
+</body>
+</html>

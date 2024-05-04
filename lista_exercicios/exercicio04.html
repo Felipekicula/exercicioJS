@@ -1,0 +1,29 @@
+<!-- Escreva um programa em JavaScript que exiba na tela a média dos
+números de um vetor. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+</head>
+<body>
+    <script>
+
+        var tamanho = parseFloat(prompt("Digite o tamanho do vetor: "));
+        var num = [];
+        var soma = 0;
+
+        for (var i = 0; i < tamanho; i++) {
+            num.push(parseFloat(prompt("Digite o número " + (i+1) + ": " )));
+            soma += num[i]; 
+        }
+
+        var media = soma / tamanho;
+
+        document.write("A média dos números é: " + media);
+
+    </script>
+</body>
+</html>

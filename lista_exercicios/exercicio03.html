@@ -1,0 +1,36 @@
+<!-- Escreva um programa em JavaScript que exiba na tela uma mensagem
+de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+"Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+"Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor". -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(prompt("Digite a sua nota do primeiro bimestre: "));
+        var nota2 = parseFloat(prompt("Digite a sua nota do segundo bimestre: "));
+        var nota3 = parseFloat(prompt("Digite a sua nota do terceito bimestre: "));
+        var nota4 = parseFloat(prompt("Digite a sua nota do quarto bimestre: "));
+
+        var resultado = (nota1 + nota2 + nota3 + nota4) /4
+
+        document.write("Sua nota final é " + resultado + "<br>");
+
+        if (resultado < 6){
+            document.write("<br>== REPROVADO ==")
+        }
+        else if (resultado>=6 && resultado<8 ){
+            document.write("<br>== APROVADO ==");
+        }
+        else {
+            document.write("<br>== APROVADO COM LOUVOR ==");
+        }
+
+    </script>
+</body>
+</html>
